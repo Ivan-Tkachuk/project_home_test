@@ -1,10 +1,10 @@
-/* @font-face {
-    font-family: 'font';
-    src: url('./fonts/font.ttf');
-    font-weight: 400;
-  }
+@font-face {
+  font-family: 'Test';
+  src: url('./fonts/Test.ttf');
+  font-weight: 400;
+}
 
 p {
-    background-color: red;
-    font-family: font;
-} */
+  background-color: aqua;
+  font-family: 'Test', Verdana, Geneva, Tahoma, sans-serif;
+}
