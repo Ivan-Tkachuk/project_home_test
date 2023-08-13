@@ -1,18 +1,21 @@
 @import './utils/utils';
 
-// @import './base/base';
+@import './base/base';
 
 // @import './components/components';
 
 // @import './layout/layout';
 
+// p {
+//     background-color: aqua;
+//     font-family: 'TTHoves', Verdana, Geneva, Tahoma, sans-serif;
+//   }
 
+// .tasks-list__number {
+//     font-family: 'SFProDisplay', Verdana, Geneva, Tahoma, sans-serif;
+//     font-size: 200px;
+// }
 
-.tasks-list__number {
-    font-family: 'SFProDisplay', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 200px;
-}
-
-.copyright {
-    font-family: 'Open Sans', sans-serif; 
-}
+// .copyright {
+//     font-family: 'Open Sans', sans-serif; 
+// }

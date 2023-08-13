@@ -23,21 +23,41 @@
   src: url("../fonts/SFProDisplay-Black.ttf");
   font-weight: 200;
 }
-@font-face {
-  font-family: "Test";
-  src: url("../fonts/Test.ttf");
-  font-weight: 400;
-}
-p {
-  background-color: aqua;
-  font-family: "Test", Verdana, Geneva, Tahoma, sans-serif;
+:root {
+  --primary-font-family--: "TTHoves";
+  --secondary-font-family--: "SFProDisplay";
+  --third-font-family--: "Open Sans", sans-serif;
 }
 
-.tasks-list__number {
-  font-family: "SFProDisplay", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 200px;
+body {
+  font-family: var(--primary-font-family--);
 }
 
-.copyright {
-  font-family: "Open Sans", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+body {
+    font-family: var(--primary-font-family--);
+    // font-size: 14px;
+    // letter-spacing: 0.03em;
+
+    // color: var(--primary-text-color--);
+    // background-color: var(--white-color--);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    // border-radius: 4px;
+}
+
+// .list {
+//     list-style: none;
+//     padding-left: 0;
+//     margin: 0;
+// }
+
+// .link {
+//     text-decoration: none;
+// }
