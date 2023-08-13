@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Test';
   src: url('./fonts/Test.ttf');
   font-weight: 400;
@@ -7,4 +7,4 @@
 p {
   background-color: aqua;
   font-family: 'Test', Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
