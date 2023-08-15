@@ -24,13 +24,32 @@
   font-weight: 200;
 }
 :root {
+  --white-color--:#FFFFFF;
+  --black-color--:#000000;
+  --secondary-background-color--:#FBFBFB;
+  --third-background-color--:#F9F9F9;
+  --footer-background-color--:#2C2C2C;
+  --form-background-color--:#F3F3F3;
+  --image-background-color--:#C4C4C4;
+  --primary-text-color--:#333333;
+  --section-title-color--:#BDBDBD;
+  --form-placeholder-color--:#666666;
+  --copyright-text-color--:rgba(200, 200, 200, 0.5);
+  --accent-color-focus--:#F2F2F2;
+  --slash-color--:#E0E0E0;
+  --copyright-line-color--:#D8D8D8;
   --primary-font-family--: "TTHoves";
   --secondary-font-family--: "SFProDisplay";
   --third-font-family--: "Open Sans", sans-serif;
 }
 
+* {
+  color: var(--primary-text-color--);
+}
+
 body {
   font-family: var(--primary-font-family--);
+  background-color: var(--white-color--);
 }
 
 h1,
@@ -51,6 +70,15 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
 address {
   font-style: normal;
 }
@@ -60,4 +88,75 @@ button {
   margin: 0 auto;
   cursor: pointer;
   border: none;
+}
+
+.section {
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 333px;
+}
+
+.logo {
+  margin: 30px 0;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.site-nav__link {
+  position: relative;
+  width: 140px;
+  height: 64px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.site-nav__link::before,
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.site-nav__link::before {
+  left: 0;
+  border-top: 1px solid black;
+}
+
+.site-nav__link::after {
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid black;
+}
+
+.site-nav__link:hover::before,
+.site-nav__link:hover::after,
+.site-nav__link:focus::before,
+.site-nav__link:focus::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.site-nav__link-current::before,
+.site-nav__link-current::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
