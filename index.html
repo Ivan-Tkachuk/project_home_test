@@ -14,24 +14,31 @@
     <title>Project Home</title>
   </head>
   <body>
-    <header class="head">
-      <nav class="main-nav container">
-        <a href="./index.html" class="logo main-nav__logo">
-          <img src="./images/icon-logo.svg" alt="logo" width="67px" height="41px">
-          <!-- <svg class="logo__icon" width="67px" height="41px">
-            <use href="./images/logo.svg"></use>
-          </svg> -->
-        </a>
-        <ul class="site-nav">
-          <li class="site-nav__item"><a href="" class="site-nav__link  site-nav__link-current">Главная</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">Галерея</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">Проекты</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">Сертификаты</a></li>
-          <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-        </ul>
-      </nav>
+    <header class="head mobile-head">
+      <div class="container">
+        <nav class="main-nav mobile-main-nav">
+          <a href="./index.html" class="logo main-nav__logo">
+            <img src="./images/icon-logo.svg" alt="logo" width="67px" height="41px">
+          </a>
+          <ul class="site-nav">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link  site-nav__link-current">Главная</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Галерея</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Проекты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Сертификаты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+          </ul>
+          <button type="button" class="mobile-menu-btn" data-menu-open>
+            <svg class="mobile-menu-btn__icon" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+
+
     </header>
-    <main>
+    <!-- <main>
       <section class="section hero">
         <div class="container">
             <div class="hero-box">
@@ -234,8 +241,8 @@
           <img src="" alt="" class="feedback__img">
         </div>
       </section>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
       <div class="footer-container">
         <a href="./index.html" class="logo footer__logo">LOGO
           <svg class="logo__icon">
@@ -306,6 +313,8 @@
         </div>
       </div>
       <p class="copyright">© 2019 Digital Project. Все права защищены.</p>
-    </footer>
+    </footer> -->
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
