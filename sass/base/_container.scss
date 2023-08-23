@@ -5,16 +5,16 @@
 // }
 
 .container {
-    width: 100%;
+    box-sizing: border-box;
+    // width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-}
+    margin-left: auto;
+    margin-right: auto;
 
 @media screen and (min-width: 480px) {
     .container {
-        min-width: 480px;
-        // margin-left: auto;
-        // margin-right: auto;
+        width: 480px;
     }
 }
 
@@ -28,4 +28,5 @@
     .container {
         width: 1200px;
     }
+}
 }

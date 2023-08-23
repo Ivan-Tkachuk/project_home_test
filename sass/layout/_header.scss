@@ -1,24 +1,30 @@
+.logo img {
+  display: block;
+  width: 67px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  width: 67px;
+  height: 41px;
+}
+
 @media screen and (max-width: 768px) {
   .site-nav {
     display: none;
 }
-// .mobile-head {
-
-// }
 
 .mobile-main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // margin: 16px 0;
   width: 100%;
 }
 
-// .main-nav {
-//   margin: 16px 0;
-// }
 
-.main-nav__logo {
+.logo-box {
   padding: 16px 0;
 }
 
@@ -31,28 +37,31 @@
     margin: 0;
 }
 
-// .mobile-menu-btn__icon {
-//     width: 40px;
-//     height: 40px;
-// }
+.mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+}
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
-    margin: 30px 0;
+  .logo-box {
+    padding: 30px 0;
+    flex-basis: calc((100% + 30px) / 3);
   }
 
   .main-nav {
+    width: 100%;
     display: flex;
+    justify-content: start;
     align-items: center;
-    gap: 333px;
+    // gap: 333px;
   }
   
   .site-nav {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
   }
 
   .mobile-menu-btn {
@@ -60,7 +69,11 @@
 }
 }
 
-
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    gap: 60px;
+  }
+}
   
   .site-nav__link {
       position: relative;
